@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
+
+    <!-- Dòng: Rạp -->
+    <TextView
+        android:id="@+id/tvCinema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rạp: "
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#444"
+        android:textSize="25sp"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Dòng: Giờ + Ghế (chung hàng) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Giờ: 12:00"
+            android:textSize="20sp"
+            android:textColor="#444"/>
+
+        <TextView
+            android:id="@+id/tvSeats"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="Ghế: A1, A2"
+            android:textColor="#444"/>
+    </LinearLayout>
+
+    <!-- Dòng: Giá -->
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá: 120.000 VND"
+        android:textColor="#444"
+        android:textSize="20sp"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Dòng: Ngày -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Ngày: 01/07/2025"
+        android:textColor="#444"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Dòng: Thanh toán -->
+    <TextView
+        android:id="@+id/tvPaymentMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Thanh toán: "
+        android:textColor="#444"
+        android:layout_marginTop="4dp"/>
+
+</LinearLayout>

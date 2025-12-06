@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_background_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/welcomeTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"  android:fontFamily="sans-serif-condensed"
+        android:letterSpacing="0.25"
+        android:text="WELLCOME\nSKYCINEMA"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_bg" android:orientation="vertical" android:padding="24dp">
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableStart="@drawable/baseline_email_24" android:drawablePadding="8dp"
+            android:ems="10" android:hint="Email" android:inputType="textEmailSubject"
+            android:padding="8dp" android:textColor="@color/black"
+            android:textColorHighlight="@color/cardview_dark_background"/>
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext" android:drawableStart="@drawable/baseline_lock_24"
+            android:drawablePadding="8dp" android:ems="10" android:hint="Mật khẩu"
+            android:inputType="textPassword" android:padding="8dp" android:textColor="@color/black"
+            android:textColorHighlight="@color/cardview_dark_background"/>
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/purple" android:textColor="@color/white"
+            android:paddingVertical="12dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/backToLoginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Đã có tài khoản? Đăng nhập"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:onClick="goToLogin"
+            android:focusable="true"/>
+    </LinearLayout>
+</LinearLayout>

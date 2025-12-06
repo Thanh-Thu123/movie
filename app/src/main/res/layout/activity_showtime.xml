@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginTop="32dp">
+
+        <!-- ==== Chọn ngày ==== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Chọn ngày"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/calendar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Calendar"
+                android:src="@drawable/ic_calendar" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 7 ngày -->
+                <Button android:id="@+id/btnDay1" android:layout_width="100dp" android:layout_height="wrap_content" android:text="01\nMon" android:backgroundTint="#FFFFFF" android:textColor="#000" android:layout_marginEnd="8dp"/>
+                <Button android:id="@+id/btnDay2" android:layout_width="100dp" android:layout_height="wrap_content" android:text="02\nTue" android:backgroundTint="#FFFFFF" android:textColor="#000" android:layout_marginEnd="8dp"/>
+                <Button android:id="@+id/btnDay3" android:layout_width="100dp" android:layout_height="wrap_content" android:text="03\nWed" android:backgroundTint="#FFFFFF" android:textColor="#000" android:layout_marginEnd="8dp"/>
+                <Button android:id="@+id/btnDay4" android:layout_width="100dp" android:layout_height="wrap_content" android:text="04\nThu" android:backgroundTint="#FFFFFF" android:textColor="#000" android:layout_marginEnd="8dp"/>
+                <Button android:id="@+id/btnDay5" android:layout_width="100dp" android:layout_height="wrap_content" android:text="05\nFri" android:backgroundTint="#FFFFFF" android:textColor="#000" android:layout_marginEnd="8dp"/>
+                <Button android:id="@+id/btnDay6" android:layout_width="100dp" android:layout_height="wrap_content" android:text="06\nSat" android:backgroundTint="#FFFFFF" android:textColor="#000" android:layout_marginEnd="8dp"/>
+                <Button android:id="@+id/btnDay7" android:layout_width="100dp" android:layout_height="wrap_content" android:text="07\nSun" android:backgroundTint="#FFFFFF" android:textColor="#000" android:layout_marginEnd="8dp"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- ==== Chọn giờ ==== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn giờ"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Dòng 1 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+
+                    <Button android:id="@+id/btnTime1700"  android:text="17:00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                    <Button android:id="@+id/btnTime1730"  android:text="17:30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                    <Button android:id="@+id/btnTime1800"  android:text="18:00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                    <Button android:id="@+id/btnTime1830"  android:text="18:30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                    <Button android:id="@+id/btnTime1900"  android:text="19:00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                    <Button android:id="@+id/btnTime1930"  android:text="19:30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                    <Button android:id="@+id/btnTime1945"  android:text="19:45" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                    <Button android:id="@+id/btnTime2000"  android:text="20:00" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <!-- Dòng 2 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button android:id="@+id/btnTime2030" android:text="20:30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                    <Button android:id="@+id/btnTime2045" android:text="20:45" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                    <Button android:id="@+id/btnTime2100" android:text="21:00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                    <Button android:id="@+id/btnTime2130" android:text="21:30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                    <Button android:id="@+id/btnTime2145" android:text="21:45" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                    <Button android:id="@+id/btnTime2200" android:text="22:00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                    <Button android:id="@+id/btnTime2230" android:text="22:30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                    <Button android:id="@+id/btnTime2300" android:text="23:00" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- ==== Chọn rạp ==== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn rạp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Danh sách rạp -->
+        <include layout="@layout/item_theater" />
+
+        <!-- === Nút chọn ghế === -->
+        <Button
+            android:id="@+id/btnChooseSeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎫 Chọn ghế"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#2196F3"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp" />
+    </LinearLayout>
+</ScrollView>

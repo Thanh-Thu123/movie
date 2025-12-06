@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:padding="15dp"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Đăng xuất" />
+        <item
+            android:id="@+id/nav_now_showing"
+            android:title="Phim đang chiếu" />
+        <item
+            android:id="@+id/nav_coming_soon"
+            android:title="Phim sắp chiếu" />
+        <item
+            android:id="@+id/nav_horror"
+            android:title="Phim kinh dị" />
+        <item
+            android:id="@+id/nav_action"
+            android:title="Phim hành động" />
+        <item
+            android:id="@+id/nav_animation"
+            android:title="Phim hoạt hình" />
+    </group>
+</menu>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient_background_1"
+    android:padding="10dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background_1"
+    android:layout_marginTop="10dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageBanner"
+        android:layout_width="419dp"
+        android:layout_height="370dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tên phim"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/imageBanner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Trạng thái -->
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trạng thái: "
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/textTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Thể loại -->
+    <TextView
+        android:id="@+id/textGener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thể loại:"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@id/textStatus"
+        app:layout_constraintStart_toEndOf="@id/textStatus" />
+
+    <!-- Đạo diễn -->
+    <TextView
+        android:id="@+id/textDirector"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Đạo diễn: "
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/textStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Hàng chứa: Quốc gia - Năm - Thời lượng -->
+    <LinearLayout
+        android:id="@+id/infoRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/textDirector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/textCountry"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Quốc gia:"
+            android:textColor="@android:color/black"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/textYear"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Năm:"
+            android:textColor="@android:color/black"
+            android:textSize="19sp"
+            android:paddingStart="8dp" />
+
+    </LinearLayout>
+
+    <!-- Diễn viên -->
+    <TextView
+        android:id="@+id/textActors"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Diễn viên: "
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/infoRow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Nhà sản xuất -->
+    <TextView
+        android:id="@+id/textProducer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nhà sản xuất: "
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/textActors"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Mô tả -->
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4dp"
+        android:text="Mô tả:"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/textProducer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple"
+        android:paddingStart="32dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="8dp"
+        android:text="Quay lại"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textDescription"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnBookTicket" />
+    <!-- Nút đặt vé -->
+    <Button
+        android:id="@+id/btnBookTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple"
+        android:paddingStart="32dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="8dp"
+        android:text="Đặt vé"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textDescription"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_back"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

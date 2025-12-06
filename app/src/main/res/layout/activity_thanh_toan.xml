@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/gradient_background_1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/textCinema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎬 Rạp:"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🕒 Giờ chiếu:"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/textMovieName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎞️ Phim: "
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/textSeats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💺 Ghế:"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/textPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💰 Tổng tiền:"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_marginBottom="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_use_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sử dụng 10 điểm để giảm 10,000 VNĐ"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="Nhập tên"
+            android:textSize="20sp"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:background="@drawable/custom_edittext"
+            android:textColorHighlight="@color/cardview_dark_background"/>
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:hint="Nhập email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:background="@drawable/custom_edittext"
+            android:textColorHighlight="@color/cardview_dark_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn phương thức thanh toán:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp">
+
+            <RadioButton
+                android:id="@+id/radioMomo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ví MoMo"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/radioBank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngân hàng"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/radioVnpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VNPay"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnConfirmPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/purple"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="Xác nhận thanh toán"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</ScrollView>

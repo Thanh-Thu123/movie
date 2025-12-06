@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <!-- Home Fragment (User) -->
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.projectfilm.ui.user.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/user_home">
+        <action
+            android:id="@+id/action_nav_home_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+
+    <!-- Login Fragments (Gallery/Slideshow sử dụng lại Login) -->
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.projectfilm.ui.auth.LoginFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.projectfilm.ui.auth.LoginFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_login" />
+
+    <!-- Admin Dashboard Fragment -->
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.projectfilm.ui.admin.dashboardFragment.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/admin_dashboard">
+        <!-- Dashboard → Manage Movies -->
+        <action
+            android:id="@+id/action_dashboardFragment_to_movieManageFragment"
+            app:destination="@id/movieManageFragment" />
+        <!-- Dashboard → Manage Users -->
+        <action
+            android:id="@+id/action_dashboardFragment_to_userManageFragment"
+            app:destination="@id/userManageFragment" />
+    </fragment>
+
+    <!-- Movie Management Fragment -->
+    <fragment
+        android:id="@+id/movieManageFragment"
+        android:name="com.example.projectfilm.ui.admin.movie.MovieManageFragment"
+        android:label="Movies"
+        tools:layout="@layout/admin_manage_movies" />
+
+    <!-- User Management Fragment -->
+    <fragment
+        android:id="@+id/userManageFragment"
+        android:name="com.example.projectfilm.ui.admin.user.UserManageFragment"
+        android:label="Users"
+        tools:layout="@layout/admin_manage_users">
+        <!-- ✅ Thêm action BACK về Dashboard -->
+        <action
+            android:id="@+id/action_userManageFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+
+    <!-- Movie Detail Fragment -->
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.example.projectfilm.ui.user.movie.MovieDetailFragment"
+        android:label="MovieDetailFragment" />
+
+    <!-- Price Management Fragment -->
+    <fragment
+        android:id="@+id/priceManageFragment"
+        android:name="com.example.projectfilm.ui.admin.movie.PriceManageFragment"
+        android:label="Quản lý Giá Vé"
+        tools:layout="@layout/fragment_price_manage" />
+</navigation>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+        <string name="user_data_not_found">Không tìm thấy dữ liệu người dùng.</string>
+        <string name="error_loading_data">Lỗi tải dữ liệu: </string>
+        <string name="user_not_logged_in">Người dùng chưa đăng nhập.</string>
+        <string name="hotline_number">Hotline: 19001900</string>
+        <string name="feature_under_development">Tính năng đang phát triển.</string>
+        <string name="user_not_identified">Không xác định được người dùng.</string>
+        <string name="fill_all_fields">Vui lòng nhập đầy đủ họ tên, email và địa chỉ.</string>
+        <string name="saved_and_returning_home">Đã lưu và quay lại trang chủ.</string>
+        <string name="save_successful">Đã lưu thành công.</string>
+        <string name="error_saving_data">Lỗi lưu: </string>
+</resources>

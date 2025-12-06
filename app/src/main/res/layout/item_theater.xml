@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F8F8F8">
+
+    <!-- Rạp 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="15dp">
+
+
+        <Button
+            android:id="@+id/theater_Cinestar_Quoc_Thanh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cinestar Quốc Thanh"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:backgroundTint="@android:color/white"
+            android:padding="10dp"
+            android:gravity="start|center_vertical"
+            android:textAlignment="viewStart"
+            android:elevation="2dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="271 Nguyễn Trãi, P. Nguyễn Cư Trinh, Q.1"
+            android:textSize="16sp"
+            android:textColor="#666"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Rạp 2 -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/theater_Mega_GS_Cao_Thang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mega GS Cao Thắng"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:backgroundTint="@android:color/white"
+            android:padding="10dp"
+            android:gravity="start|center_vertical"
+            android:textAlignment="viewStart"
+            android:elevation="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lầu 6 - 7, 19 Cao Thắng, P.2, Q.3"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Rạp 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/theater_Galaxy_Tan_Binh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Galaxy Tân Bình"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="start|center_vertical"
+            android:textAlignment="viewStart"
+            android:padding="10dp"
+            android:elevation="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="246 Nguyễn Hồng Đào, Q.Tân Bình"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+
+    <!-- Rạp 5 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Rạp 4 -->
+        <Button
+            android:id="@+id/theater_Lotte_Thu_Duc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:elevation="2dp"
+            android:padding="10dp"
+            android:gravity="start|center_vertical"
+            android:textAlignment="viewStart"
+            android:text="Lotte Thủ Đức"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Tầng 2, TTTM Joy Citipoint Thủ Đức, KCX Linh Trung 1, QL 1A"
+            android:textColor="#666"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/theater_Lotte_Moonlight_Thu_Duc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lotte Moonlight Thủ Đức"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:backgroundTint="@android:color/white"
+            android:padding="10dp"
+            android:gravity="start|center_vertical"
+            android:textAlignment="viewStart"
+            android:elevation="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moonlight Residences, 102 Đặng Văn Bi, Bình Thọ, Thủ Đức"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Rạp 6 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/theater_Cinestar_Hai_Ba_Trung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cinestar Hai Bà Trưng"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="start|center_vertical"
+            android:textAlignment="viewStart"
+            android:textColor="#000"
+            android:backgroundTint="@android:color/white"
+            android:padding="10dp"
+            android:elevation="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="135 Hai Bà Trưng, P. Bến Nghé, Q.1"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+</LinearLayout>
